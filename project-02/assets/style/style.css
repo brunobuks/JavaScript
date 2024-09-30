@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #6599FF, #8C50FE, #FF6253);
+    overflow: hidden;
+}
+
+.fightarea {
+    display: flex;
+    gap: 20px;
+}
+
+#char, #monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 10%;
+}
+
+.lifebar > .bar {
+    height: inherit;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.log {
+    border: 1px dashed black;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.attackButton {
+    width: 80px;
+    border-radius: 5px;
+    background-color: lightslategray;
+    color: black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.449);
+    cursor: pointer;
+}
+
+.attackButton:hover {
+    background-color: blueviolet;
+    color: antiquewhite;
+}
